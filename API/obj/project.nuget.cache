@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Cfn7WPB97x1sD8aoRX3MPRhpTYWBxxJWik0+qjjLdBCXxbK5Xsq+kKoieWqMx0URrEP7SaR4oz6d2TW6kDUIBA==",
+  "dgSpecHash": "E5iPja0oUzXAoEbRixuCgvVSNcseF6HuKo3VvKpU1btODFHLXGzRSIKeOVIgq7BoHwNdOGtlW6c1lhfewewdnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Аскар\\Desktop\\code\\dotnetlearn\\DatingApp\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\Аскар\\Desktop\\code\\dotnetlearn\\DatingApp\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Аскар\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Аскар\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.14\\microsoft.data.sqlite.core.7.0.14.nupkg.sha512",
