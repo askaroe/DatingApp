@@ -46,7 +46,7 @@ public class AccountController : BaseApiController
         };
     }
 
-    [HttpPost("login")] // route: api/account/register
+    [HttpPost("login")] // route: api/account/login
     public async Task<ActionResult<UserDTO>> Login(LoginDTO loginDTO)
     {
         var user = await _context.Users.SingleOrDefaultAsync(u => 
