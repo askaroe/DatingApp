@@ -27,4 +27,8 @@ export class HomeComponent implements OnInit {
       complete: () => console.log('Request completed')
     })
   }
+
+  cancelRegisterMode(event: boolean){
+    this.registerMode = event;
+  }
 }
