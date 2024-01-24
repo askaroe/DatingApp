@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9z2CTt3S1Jm8eoo3BRzjlfkIs7ICCDKydJ0mJaqH5HT3xzlxintzhP481KUwy5PmAtftYqNpeoAW44o8fUwfkw==",
+  "dgSpecHash": "OcMPbEINWxNAGl78eDVH/u6NabuSVVwSUHEh4W5jPOU26onMt85ebdQ2t8NQZ77aWeUQPKk7XGV0j8F0pXR2lA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Аскар\\Desktop\\code\\dotnetlearn\\DatingApp\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\Аскар\\Desktop\\code\\dotnetlearn\\DatingApp\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Аскар\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Аскар\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.15\\microsoft.aspnetcore.authentication.jwtbearer.7.0.15.nupkg.sha512",
