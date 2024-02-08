@@ -54,7 +54,7 @@ public class UsersController : BaseApiController
     }
 
     [HttpPut("add-photo")]
-    public async Task<IActionResult<PhotoDTO>> AddPhoto(IFormFile file)
+    public async Task<ActionResult<PhotoDTO>> AddPhoto(IFormFile file)
     {
         var user = await _userRepository.GetUserByUsernameAsync(User.GetUsername());
 
