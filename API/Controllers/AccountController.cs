@@ -42,15 +42,16 @@ public class AccountController : BaseApiController
         return new UserDTO
         {
             UserName = user.UserName,
-            Token = _tokenService.CreateToken(user)
+            Token = _tokenService.CreateToken(user),
         };
     }
 
     [HttpPost("login")] // route: api/account/login
     public async Task<ActionResult<UserDTO>> Login(LoginDTO loginDTO)
     {
-        var user = await _context.Users.SingleOrDefaultAsync(u => 
-        u.UserName == loginDTO.Username.ToLower());
+        var user = await _context.Users
+            .Include(p => p.Photos)
+            .SingleOrDefaultAsync(u => u.UserName == loginDTO.Username.ToLower());
 
         if(user == null) return Unauthorized("Invalid username");
 
@@ -66,7 +67,8 @@ public class AccountController : BaseApiController
         return new UserDTO
         {
             UserName = user.UserName,
-            Token = _tokenService.CreateToken(user)
+            Token = _tokenService.CreateToken(user),
+            PhotoUrl = user.Photos.FirstOrDefault(x => x.IsMain)?.Url
         };
     }
 
