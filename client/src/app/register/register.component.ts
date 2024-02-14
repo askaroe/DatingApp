@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { AccountService } from '../_services/account.service';
 import { ToastrService } from 'ngx-toastr';
-import { AbstractControl, FormControl, FormGroup, ValidatorFn, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormControl, FormGroup, ValidatorFn, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -13,18 +13,19 @@ export class RegisterComponent implements OnInit {
   model: any = {}
   registerForm: FormGroup = new FormGroup({});
 
-  constructor(private accountService: AccountService, private toastr : ToastrService) {}
+  constructor(private accountService: AccountService, private toastr : ToastrService, 
+    private fb: FormBuilder) {}
 
   ngOnInit(): void {
     this.initializeForm();
   }
 
   initializeForm() {
-    this.registerForm = new FormGroup ({
-      username: new FormControl('', Validators.required),
-      password: new FormControl('', [Validators.required, 
-        Validators.minLength(4), Validators.maxLength(8)]),
-      confirmPassword: new FormControl('', [Validators.required, this.matchValues('password')])
+    this.registerForm = this.fb.group ({
+      username: ['', Validators.required],
+      password: ['', [Validators.required, 
+        Validators.minLength(4), Validators.maxLength(8)]],
+      confirmPassword: ['', [Validators.required, this.matchValues('password')]]
     })
     this.registerForm.controls['password'].valueChanges.subscribe({
       next: () => this.registerForm.controls['confirmPassword'].updateValueAndValidity()
