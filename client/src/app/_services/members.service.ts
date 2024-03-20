@@ -5,7 +5,6 @@ import { Member } from '../_models/member';
 import { map, of } from 'rxjs';
 import { PaginatedResult } from '../_models/pagination';
 import { UserParams } from '../_models/userParams';
-import { ParseTreeResult } from '@angular/compiler';
 
 @Injectable({
   providedIn: 'root'
