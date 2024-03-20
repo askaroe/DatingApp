@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XufBsoAkgTI+rsChQ+6zRod1owEK3Fpzocp0/q2jK/9XG3DH0Kevwg6ZYw0JhpF+TS3TLDSwOA9sp9hTaSVxXA==",
+  "dgSpecHash": "cE0GmxxUQG6ruTFGguHp4cgIFh1qBDKuwLZszTkd/luV+gekOEhqBj07MrO+pQnAE35o60XE8PSiJdGLtmfkrQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Аскар\\Desktop\\code\\dotnetlearn\\DatingApp\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\Аскар\\Desktop\\code\\dotnetlearn\\DatingApp\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Аскар\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Аскар\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
