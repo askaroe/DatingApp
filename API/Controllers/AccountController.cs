@@ -31,11 +31,8 @@ public class AccountController : BaseApiController
 
         var user = _mapper.Map<AppUser>(registerDTO); // AppUser - to, registerDTO - from
 
-        using var hmac = new HMACSHA512();
 
         user.UserName = registerDTO.Username.ToLower();
-        user.PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDTO.Password));
-        user.PasswordSalt = hmac.Key;
 
         _context.Users.Add(user);
 
@@ -58,15 +55,6 @@ public class AccountController : BaseApiController
             .SingleOrDefaultAsync(u => u.UserName == loginDTO.Username.ToLower());
 
         if (user == null) return Unauthorized("Invalid username");
-
-        using var hmac = new HMACSHA512(user.PasswordSalt);
-
-        var computedHashOfTheLogin = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginDTO.Password));
-
-        for (int i = 0; i < computedHashOfTheLogin.Length; i++)
-        {
-            if (computedHashOfTheLogin[i] != user.PasswordHash[i]) return Unauthorized("Invalid password");
-        }
 
         return new UserDTO
         {
