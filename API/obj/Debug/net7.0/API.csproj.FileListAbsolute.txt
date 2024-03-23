@@ -74,3 +74,4 @@ C:\Users\Аскар\Desktop\code\dotnetlearn\DatingApp\api\bin\Debug\net7.0\Auto
 C:\Users\Аскар\Desktop\code\dotnetlearn\DatingApp\api\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Аскар\Desktop\code\dotnetlearn\DatingApp\api\bin\Debug\net7.0\CloudinaryDotNet.dll
 C:\Users\Аскар\Desktop\code\dotnetlearn\DatingApp\api\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Аскар\Desktop\code\dotnetlearn\DatingApp\api\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
