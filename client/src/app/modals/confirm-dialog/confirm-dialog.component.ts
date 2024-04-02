@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({
@@ -6,7 +6,7 @@ import { BsModalRef } from 'ngx-bootstrap/modal';
   templateUrl: './confirm-dialog.component.html',
   styleUrls: ['./confirm-dialog.component.css']
 })
-export class ConfirmDialogComponent implements OnInit {
+export class ConfirmDialogComponent {
   title = '';
   message = '';
   btnOkText = '';
@@ -14,13 +14,10 @@ export class ConfirmDialogComponent implements OnInit {
   result = false;
 
   constructor(public bsModalRef: BsModalRef) {}
-  
-  ngOnInit(): void {
-  }
 
   confirm() {
     this.result = true;
-    this.bsModalRef.hide();
+    this.bsModalRef.hide()
   }
 
   decline() {
