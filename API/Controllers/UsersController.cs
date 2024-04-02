@@ -45,8 +45,6 @@ public class UsersController : BaseApiController
     [HttpGet("{username}")] //api/users/jon
     public async Task<ActionResult<MemberDTO>> GetUser(string username)
     {
-        var user = await _uow.UserRepository.GetUserByUsernameAsync(username);
-
         return await _uow.UserRepository.GetMemberAsync(username);
     }
 
