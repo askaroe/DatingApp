@@ -115,10 +115,4 @@ public class MessageRepository : IMessageRepository
     {
         _context.Connections.Remove(connection);
     }
-
-
-    public async Task<bool> SaveAllAsync()
-    {
-        return await _context.SaveChangesAsync() > 0;
-    }
 }
