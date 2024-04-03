@@ -1,0 +1,26 @@
+# fly.toml app configuration file generated for datingapp-deployment-fly-io on 2024-04-04T00:29:06+05:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'datingapp-deployment-fly-io'
+primary_region = 'hkg'
+
+[build]
+  image = 'askaroe/datingapp:latest'
+
+[env]
+  ASPNETCORE_URLS="http://+:8080"
+  CloudinarySettings__CloudName="dgl55ss0r"
+  CloudinarySettings__ApiKey="889294173997772"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  size = 'shared-cpu-1x'
