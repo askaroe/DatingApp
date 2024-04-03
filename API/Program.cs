@@ -27,6 +27,9 @@ app.UseCors(builder => builder
 app.UseAuthentication(); // checks valid token or not 
 app.UseAuthorization(); // cheks what user allowed to do
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 app.MapControllers();
 app.MapHub<PresenceHub>("hubs/presence");
 app.MapHub<MessageHub>("hubs/message");
