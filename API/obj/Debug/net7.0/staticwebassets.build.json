@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BcuWnldJ7fXBtAiAFfHt3BV1Yc9ZG+nD8UjbWQHdbwA=",
+  "Hash": "Ak6jaI4FpPgqsTYNUTRhjw8Py3By/L8bVzq/kruBBXw=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -170,12 +170,12 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\Аскар\\Desktop\\code\\dotnetlearn\\DatingApp\\api\\wwwroot\\main.c6978669d74899e3.js",
+      "Identity": "C:\\Users\\Аскар\\Desktop\\code\\dotnetlearn\\DatingApp\\api\\wwwroot\\main.217c8b875cedf84a.js",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Аскар\\Desktop\\code\\dotnetlearn\\DatingApp\\api\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "main.c6978669d74899e3.js",
+      "RelativePath": "main.217c8b875cedf84a.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -184,7 +184,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\main.c6978669d74899e3.js"
+      "OriginalItemSpec": "wwwroot\\main.217c8b875cedf84a.js"
     },
     {
       "Identity": "C:\\Users\\Аскар\\Desktop\\code\\dotnetlearn\\DatingApp\\api\\wwwroot\\polyfills.a95b1126cd114971.js",
