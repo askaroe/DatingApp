@@ -76,3 +76,5 @@ C:\Users\Аскар\Desktop\code\dotnetlearn\DatingApp\api\bin\Debug\net7.0\Clou
 C:\Users\Аскар\Desktop\code\dotnetlearn\DatingApp\api\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\Аскар\Desktop\code\dotnetlearn\DatingApp\api\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Аскар\Desktop\code\dotnetlearn\DatingApp\api\bin\Debug\net7.0\API.staticwebassets.runtime.json
+C:\Users\Аскар\Desktop\code\dotnetlearn\DatingApp\api\bin\Debug\net7.0\Npgsql.dll
+C:\Users\Аскар\Desktop\code\dotnetlearn\DatingApp\api\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
