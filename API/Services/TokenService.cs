@@ -15,7 +15,7 @@ public class TokenService : ITokenService
 
     public TokenService(IConfiguration config, UserManager<AppUser> userManager)
     {
-        _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["TokenKey"]));
+        _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["TokenKey2"]));
         _userManager = userManager;
     }
 
@@ -31,7 +31,7 @@ public class TokenService : ITokenService
 
         claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
 
-        var creds = new SigningCredentials(_key, SecurityAlgorithms.HmacSha256Signature);
+        var creds = new SigningCredentials(_key, SecurityAlgorithms.HmacSha512Signature);
 
         var tokenDescriptor = new SecurityTokenDescriptor
         {
